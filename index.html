@@ -1,65 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>MISTIC Cloud</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #020617;
-      color: white;
-      text-align: center;
-    }
-    .box {
-      padding: 80px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h1 {
-      font-size: 3rem;
-    }
-    p {
-      opacity: 0.85;
-      font-size: 1.1rem;
-    }
-    a.btn {
-      display: inline-block;
-      margin: 15px;
-      padding: 14px 30px;
-      background: #2563eb;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-    .features {
-      margin-top: 50px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-    }
-    .card {
-      background: #0f172a;
-      padding: 20px;
-      border-radius: 10px;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>MISTIC Cloud – High Performance Hosting</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Favicons -->
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<style>
+:root {
+  --bg: #020617;
+  --card: #0f172a;
+  --accent: #3b82f6;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: radial-gradient(circle at top, #020617, #000);
+  color: var(--text);
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: var(--muted);
+  font-size: 1.2rem;
+}
+
+.buttons a {
+  display: inline-block;
+  margin: 15px 10px;
+  padding: 14px 32px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: white;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.feature {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.feature h3 {
+  margin-top: 0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 100px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+</style>
 </head>
+
 <body>
-  <div class="box">
+<div class="container">
+
+  <div class="hero">
     <h1>MISTIC Cloud</h1>
-    <p>Reliable, secure, and high-performance hosting for Minecraft and modern communities.</p>
+    <p>High-performance hosting for Minecraft, proxies, and modern communities.</p>
 
-    <a class="btn" href="https://discord.gg/YOURINVITE">Join Discord</a>
-    <a class="btn" href="https://panel.mistic.cloud">Client Panel</a>
-
-    <div class="features">
-      <div class="card">🚀 High Performance Nodes</div>
-      <div class="card">🛡️ DDoS Protection</div>
-      <div class="card">⚡ Low Latency</div>
-      <div class="card">💬 24/7 Discord Support</div>
+    <div class="buttons">
+      <a class="btn-primary" href="https://discord.gg/YOURINVITE">Join Discord</a>
+      <a class="btn-secondary" href="https://panel.mistic.cloud">Client Panel</a>
     </div>
   </div>
+
+  <div class="features">
+    <div class="feature">
+      <h3>🚀 Performance First</h3>
+      <p>Optimized nodes with consistent performance for servers of all sizes.</p>
+    </div>
+    <div class="feature">
+      <h3>🛡️ DDoS Protection</h3>
+      <p>Advanced network protection to keep your services online 24/7.</p>
+    </div>
+    <div class="feature">
+      <h3>⚡ Low Latency</h3>
+      <p>Carefully selected locations to ensure minimal ping and fast response.</p>
+    </div>
+    <div class="feature">
+      <h3>💬 Discord Support</h3>
+      <p>Fast, friendly support through our active Discord community.</p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 MISTIC Cloud · All rights reserved
+  </footer>
+
+</div>
 </body>
 </html>
