@@ -57,7 +57,7 @@ body {
   border-radius: 10px;
   text-decoration: none;
   font-weight: 600;
-  transition: 0.2s;
+  transition: all 0.2s ease;
 }
 
 .btn-primary {
@@ -72,6 +72,10 @@ body {
 .btn-secondary {
   border: 1px solid var(--accent);
   color: var(--accent);
+}
+
+.btn-secondary:hover {
+  background: rgba(59,130,246,0.12);
 }
 
 .features {
@@ -108,8 +112,15 @@ footer {
     <p>High-performance hosting for Minecraft, proxies, and modern communities.</p>
 
     <div class="buttons">
-      <a class="btn-primary" href="https://discord.gg/7Sf4gJsBfT">Join Discord</a>
-      <a class="btn-secondary" href="https://panel.mistic.cloud">Client Panel</a>
+      <a class="btn-primary" href="https://discord.gg/7Sf4gJsBfT" target="_blank">
+        Join Discord
+      </a>
+      <a class="btn-secondary" href="https://panel.mistic.cloud" target="_blank">
+        Client Panel
+      </a>
+      <a class="btn-secondary" href="https://status.mistic.cloud" target="_blank">
+        🟢 Service Status
+      </a>
     </div>
   </div>
 
@@ -133,7 +144,11 @@ footer {
   </div>
 
   <footer>
-    © 2025 MISTIC Cloud · All rights reserved
+    © 2025 MISTIC Cloud · All rights reserved ·
+    <a href="https://status.mistic.cloud" target="_blank"
+       style="color: var(--accent); text-decoration: none;">
+      Status
+    </a>
   </footer>
 
 </div>
